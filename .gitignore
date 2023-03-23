@@ -1,0 +1,13 @@
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+**/target
+/.mvn/
+/springboot-kafka/.mvn/
+/springboot-redis-lock/.mvn/
+/springboot-websocket/.mvn/

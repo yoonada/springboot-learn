@@ -1,0 +1,16 @@
+server:
+  port: 20002
+spring:
+  application:
+    name: springboot-redis-lock
+  redis:
+    database: 15
+    host: 43.142.62.156
+    port: 6380
+    password: DD123456aa
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
