@@ -4,7 +4,7 @@ spring:
   application:
     name: springboot-redis-cluster
   redis:
-    database: 13
+    database: 0
     timeout: 10s
     lettuce:
       pool:
