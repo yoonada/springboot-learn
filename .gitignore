@@ -11,3 +11,6 @@ gen
 /springboot-kafka/.mvn/
 /springboot-redis-lock/.mvn/
 /springboot-websocket/.mvn/
+/springboot-redis/.mvn/
+/springboot-redis/springboot-redis-standalone/.mvn/
+/springboot-redis/springboot-redis-cluster/.mvn/
