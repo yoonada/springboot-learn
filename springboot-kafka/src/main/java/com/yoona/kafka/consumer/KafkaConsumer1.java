@@ -13,11 +13,12 @@ import org.springframework.stereotype.Component;
  */
 @Slf4j
 @Component
-public class KafkaConsumer {
+public class KafkaConsumer1 {
 
-    @KafkaListener(topics = {TopicConstants.TEST_TOPIC}, groupId = "1", id = "123")
+
+    @KafkaListener(topics = {TopicConstants.TEST_TOPIC}, groupId = "2", id = "456")
     public void consume(String message) {
-        System.out.println("KafkaConsumer-Received message: " + message);
+        System.out.println("KafkaConsumer1-Received message: " + message);
     }
 
 }
