@@ -14,3 +14,4 @@ gen
 /springboot-redis/.mvn/
 /springboot-redis/springboot-redis-standalone/.mvn/
 /springboot-redis/springboot-redis-cluster/.mvn/
+/springboot-mybatis-plus/dynamic-datasource/.mvn/

@@ -14,6 +14,7 @@
     <modules>
         <module>springboot-kafka</module>
         <module>springboot-redis</module>
+        <module>springboot-mybatis-plus</module>
     </modules>
 
     <properties>
@@ -38,6 +39,9 @@
         <fastjson.version>2.0.10</fastjson.version>
         <redisson.version>3.14.1</redisson.version>
         <commons-pool2.version>2.11.1</commons-pool2.version>
+        <dynamic.jdbc.version>3.5.0</dynamic.jdbc.version>
+        <mybatis-plus-join.version>1.4.4</mybatis-plus-join.version>
+        <knife4j.version>2.0.9</knife4j.version>
     </properties>
 
     <!-- 版本依赖管理器 -->
@@ -172,6 +176,25 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-pool2</artifactId>
                 <version>${commons-pool2.version}</version>
+            </dependency>
+
+            <!-- 动态数据源 -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+                <version>${dynamic.jdbc.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.yulichang</groupId>
+                <artifactId>mybatis-plus-join</artifactId>
+                <version>${mybatis-plus-join.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
             </dependency>
 
         </dependencies>

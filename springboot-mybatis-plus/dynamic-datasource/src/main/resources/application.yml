@@ -1,0 +1,33 @@
+server:
+  port: 25024
+spring:
+  application:
+    name: dynamic-datasource
+  datasource:
+    dynamic:
+      primary: master #设置默认的数据源或者数据源组,默认值即为master
+      strict: false #严格匹配数据源,默认false. true未匹配到指定数据源时抛异常,false使用默认数据源
+      datasource:
+        master:
+          url: jdbc:mysql://192.168.253.130:3308/yoona?characterEncoding=utf-8&autoReconnect=true&useSSL=false
+          username: root
+          password: root123456
+          driver-class-name: com.mysql.jdbc.Driver
+        slave_1:
+          url: jdbc:mysql://192.168.253.131:3308/yoona?characterEncoding=utf-8&autoReconnect=true&useSSL=false
+          username: root
+          password: root123456
+          driver-class-name: com.mysql.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: is_delete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+
